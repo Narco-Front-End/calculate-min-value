@@ -21,10 +21,12 @@ function askMinNumber() {
         if (isNaN(+answerANumber)) {
             continue;
         }
+        iterationsStorage += answerANumber + ', ';
         numberStorage = Math.min(numberStorage, +answerANumber);
     }
+    console.log(numberStorage)
     return numberStorage;
 }
 
 askMinNumber();
-console.log(iterationsStorage);
+console.log(Math.max(+iterationsStorage));
