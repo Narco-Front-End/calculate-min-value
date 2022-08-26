@@ -29,4 +29,4 @@ function askMinNumber() {
 }
 
 askMinNumber();
-console.log(Math.max(+iterationsStorage));
+console.log(Math.min(+iterationsStorage));
